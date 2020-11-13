@@ -227,9 +227,9 @@ sup {
 }
 
 .phoneholder.a {
-  -webkit-transform: translate(10px, -1190px);
-  -ms-transform: translate(10px, -1190px);
-  transform: translate(10px, -1190px);
+  -webkit-transform: translate(6px, -1190px);
+  -ms-transform: translate(6px, -1190px);
+  transform: translate(6px, -1190px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -249,9 +249,9 @@ sup {
 }
 
 .phoneholder.b {
-  -webkit-transform: translate(75px, -1190px);
-  -ms-transform: translate(75px, -1190px);
-  transform: translate(75px, -1190px);
+  -webkit-transform: translate(73px, -1190px);
+  -ms-transform: translate(73px, -1190px);
+  transform: translate(73px, -1190px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;

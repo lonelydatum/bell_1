@@ -15,7 +15,7 @@
 }
 
 .phoneholder.a{
-	@include pos(10, -1190);
+	@include pos(6, -1190);
 	// @include pos(10, -890);
 	// @include pos(10, -820);
 	// @include pos(10, -490);
@@ -27,7 +27,7 @@
 }
 
 .phoneholder.b{
-	@include pos(75, -1190);
+	@include pos(73, -1190);
 	.phoneholderChild{
 		@include pos(0, -30);
 	}
