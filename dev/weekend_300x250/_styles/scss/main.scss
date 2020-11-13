@@ -1,0 +1,56 @@
+
+
+@import '../../../_common/styles/common.scss';
+
+
+
+.frame1 {
+	opacity: 1;
+}
+
+
+.phoneholder.a{
+	@include pos(10, -1190);
+	// @include pos(10, -890);
+	// @include pos(10, -820);
+	// @include pos(10, -490);
+	// @include pos(10, -100);
+	.phoneholderChild{
+		@include pos(0, 0);
+	}
+	
+}
+
+.phoneholder.b{
+	@include pos(75, -1190);
+	.phoneholderChild{
+		@include pos(0, -30);
+	}
+}
+
+
+.phoneholderChild{
+	
+
+	.phone_1{
+		@include pos(0, 800);
+		
+	}
+	.phone_2{
+		@include pos(0, 400);
+	}
+	.phone_3{
+		@include pos(0, 0);
+	}
+}
+
+
+
+#banner{
+	font-size: 20px;
+	color: #333;
+	width: 300px;
+	height: 250px;
+	// overflow: visible;
+}
+
