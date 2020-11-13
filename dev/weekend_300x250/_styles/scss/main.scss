@@ -5,9 +5,14 @@
 
 
 .frame1 {
-	opacity: 1;
+	// opacity: 1;
 }
 
+
+.element_bottom{
+	
+	@include pos-scale(9, -20, .5);
+}
 
 .phoneholder.a{
 	@include pos(10, -1190);
