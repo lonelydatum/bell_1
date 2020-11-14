@@ -3,6 +3,12 @@
 
 var read = [2.5, 4, 5];
 
+var data = {
+	f1: { read: read[0], y: -900 },
+	f2: { read: read[1], y: -900 },
+	f3: { read: read[2], y: -900 }
+};
+
 function start() {
 	TweenLite.defaultEase = Power1.easeOut;
 
@@ -15,43 +21,43 @@ function start() {
 	var tl = new TimelineMax();
 	tl.set(".frame1", { opacity: 1 });
 
-	tl.add("t1-out", "+=" + read[0]);
-	tl.to(".t1", .3, { opacity: 0 }, "t1-out");
-	tl.to(".element_bottom", .5, { x: 0, y: 0, ease: Power1.easeOut }, "t1-out");
+	tl.to(".t1", .3, { opacity: 0 }, "+=" + read[0]);
 
-	tl.add("t2-in");
-	tl.from([".t2"], fadeTime, { opacity: 0 }, "t2-in");
+	tl.from([".t2"], fadeTime, { opacity: 0 });
 
 	tl.to(".t2", .3, { opacity: 0 }, "+=" + read[1]);
 	tl.from(".t3", fadeTime, { opacity: 0 });
 
 	tl.to(".t3", .3, { opacity: 0 }, "+=" + read[2]);
 
-	tl.from(".hero", fadeTime, { opacity: 0 });
+	tl.add("cta");
+	tl.from(".hero", fadeTime, { opacity: 0 }, "cta");
+	tl.to(".element_bottom", .5, { x: 0, y: 0, ease: Power1.easeOut }, "cta");
 	tl.from(".end_txt", .3, { opacity: 0 });
+
 	tl.from(".cta", .3, { opacity: 0 }, "+=.3");
 }
 
 function createSlide(ab) {
 	var tl = new TimelineMax();
 
-	var speed_fast = .4;
+	var speed_fast = .5;
+	var distance_short = 70;
 
-	var easeFast = Power3.easeOut;
+	var easeFast = Power1.easeOut;
 	var easeSlow = Linear.easeNone;
 
 	tl.to(".phoneholder." + ab, speed_fast, { y: -900, ease: easeFast });
-
-	tl.to(".phoneholder." + ab, read[0], { y: "+=70", ease: easeSlow });
+	tl.to(".phoneholder." + ab, read[0], { y: "+=" + distance_short, ease: easeSlow });
 
 	tl.to(".phoneholder." + ab, speed_fast, { y: -500, ease: easeFast });
 
-	tl.to(".phoneholder." + ab, read[1], { y: "+=70", ease: easeSlow });
+	tl.to(".phoneholder." + ab, read[1], { y: "+=" + distance_short, ease: easeSlow });
 
 	tl.to(".phoneholder." + ab, speed_fast, { y: -100, ease: easeFast });
 
-	tl.to(".phoneholder." + ab, read[2], { y: "+=70", ease: easeSlow });
-	tl.to(".phoneholder." + ab, speed_fast, { opacity: 0, y: "+=300", ease: easeFast }, "+=.2");
+	tl.to(".phoneholder." + ab, read[2], { y: "+=" + distance_short, ease: easeSlow });
+	tl.to(".phoneholder." + ab, speed_fast, { opacity: 0, y: "+=300", ease: Power4.easeOut }, "+=0");
 
 	return tl;
 }

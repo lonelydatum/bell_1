@@ -215,6 +215,22 @@ sup {
   opacity: 0;
 }
 
+.btn {
+  background-color: #003778;
+  transition: background-color 0.4s, border 0.4s;
+  cursor: pointer;
+  border: 2px solid #003778;
+  border-radius: 30px;
+  position: absolute;
+  width: 63.5px;
+  height: 19.5px;
+}
+
+#banner:hover .btn {
+  background-color: #0066a4;
+  border: 2px solid #0066a4;
+}
+
 .element_bottom {
   -webkit-transform: translate(9px, -20px) scale(0.5, 0.5);
   -ms-transform: translate(9px, -20px) scale(0.5, 0.5);
@@ -296,6 +312,17 @@ sup {
   -webkit-transform: translate(0px, 0px);
   -ms-transform: translate(0px, 0px);
   transform: translate(0px, 0px);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
+.btn {
+  -webkit-transform: translate(27px, 205px);
+  -ms-transform: translate(27px, 205px);
+  transform: translate(27px, 205px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;

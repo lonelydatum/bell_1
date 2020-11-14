@@ -145,3 +145,25 @@ sup{
 	background-color: red;
 	opacity: 0;
 }
+
+.btn{
+	 background-color: #003778;
+    -webkit-transition: background-color 0.4s, border 0.4s;
+    transition: background-color 0.4s, border 0.4s;
+    cursor: pointer;
+    border: 2px solid #003778;
+    border-radius: 30px;
+    position: absolute;
+    // top: 148.5px;
+    // left: 149.5px;
+    width: 63.5px;
+    height: 19.5px;
+    // opacity: 0;
+}
+
+
+
+#banner:hover .btn {
+    background-color: #0066a4;
+    border: 2px solid #0066a4;
+}

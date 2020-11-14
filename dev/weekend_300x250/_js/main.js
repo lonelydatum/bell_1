@@ -1,5 +1,11 @@
 const read = [2.5, 4, 5]
 
+const data = {
+	f1: { read: read[0],  y: -900 },
+	f2: { read: read[1],  y: -900 },
+	f3: { read: read[2],  y: -900 }
+}
+
 function start(){
 	TweenLite.defaultEase = Power1.easeOut
 
@@ -13,31 +19,27 @@ function start(){
 	const tl = new TimelineMax()
 	tl.set(".frame1", {opacity:1})
 
-	tl.add("t1-out",  `+=${read[0]}`)
-	tl.to( ".t1", .3, {opacity: 0}, "t1-out")
-	tl.to( ".element_bottom", .5, {x:0, y:0, ease:Power1.easeOut}, "t1-out")
-
-
-	tl.add("t2-in" )
-	tl.from([".t2"], fadeTime, {opacity: 0}, "t2-in")
+	
+	tl.to( ".t1", .3, {opacity: 0}, `+=${read[0]}`)
+	
+	tl.from([".t2"], fadeTime, {opacity: 0} )
 	
 
 	tl.to(".t2", .3, {opacity: 0}, `+=${read[1]}`)
 	tl.from(".t3", fadeTime, {opacity: 0})
+	
+	tl.to(".t3", .3, {opacity: 0}, `+=${read[2]}` )
 
-	tl.to(".t3", .3, {opacity: 0}, `+=${read[2]}`)
 
-	tl.from(".hero", fadeTime, {opacity: 0})
+	tl.add("cta" )
+	tl.from(".hero", fadeTime, {opacity: 0}, "cta")
+	tl.to( ".element_bottom", .5, {x:0, y:0, ease:Power1.easeOut}, "cta")
 	tl.from(".end_txt", .3, {opacity: 0})
+
+
+	
 	tl.from(".cta", .3, {opacity: 0}, "+=.3")
 	
-	
-	
-	
-	
-
-
-
 
 }
 
@@ -45,26 +47,26 @@ function createSlide(ab){
 	const tl = new TimelineMax()
 	
 
-	const speed_fast = .4
+	const speed_fast = .5
+	const distance_short = 70
 
-	const easeFast = Power3.easeOut
+	const easeFast = Power1.easeOut
 	const easeSlow = Linear.easeNone
 
 		
-	tl.to(`.phoneholder.${ab}`, speed_fast, {y:-900, ease:easeFast})
-		
-	tl.to(`.phoneholder.${ab}`, read[0], {y:"+=70", ease:easeSlow})
+	tl.to(`.phoneholder.${ab}`, speed_fast, {y:-900, ease:easeFast})		
+	tl.to(`.phoneholder.${ab}`, read[0], {y:`+=${distance_short}`, ease:easeSlow})
 	
 	
 	tl.to(`.phoneholder.${ab}`, speed_fast, {y:-500, ease:easeFast})
 		
-	tl.to(`.phoneholder.${ab}`, read[1], {y:"+=70", ease:easeSlow})
+	tl.to(`.phoneholder.${ab}`, read[1], {y:`+=${distance_short}`, ease:easeSlow})
 	
 	
 	tl.to(`.phoneholder.${ab}`, speed_fast, {y:-100, ease:easeFast})
 		
-	tl.to(`.phoneholder.${ab}`, read[2], {y:"+=70", ease:easeSlow})
-	tl.to(`.phoneholder.${ab}`, speed_fast, {opacity:0, y:"+=300", ease:easeFast}, "+=.2")
+	tl.to(`.phoneholder.${ab}`, read[2], {y:`+=${distance_short}`, ease:easeSlow})
+	tl.to(`.phoneholder.${ab}`, speed_fast, {opacity:0, y:"+=300", ease:Power4.easeOut}, "+=0")
 	
 
 	return tl
