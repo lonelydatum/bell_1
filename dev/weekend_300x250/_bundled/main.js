@@ -28,11 +28,11 @@ function start() {
 	tl.to(".t2", .3, { opacity: 0 }, "+=" + read[1]);
 	tl.from(".t3", fadeTime, { opacity: 0 });
 
-	tl.to(".t3", .3, { opacity: 0 }, "+=" + read[2]);
+	tl.add("t3-out", "+=" + read[2]);
+	tl.to(".t3", .3, { opacity: 0 }, "t3-out");
+	tl.to(".element_bottom", .5, { x: 0, y: 0, ease: Power1.easeOut }, "t3-out");
 
-	tl.add("cta");
-	tl.from(".hero", fadeTime, { opacity: 0 }, "cta");
-	tl.to(".element_bottom", .5, { x: 0, y: 0, ease: Power1.easeOut }, "cta");
+	tl.from(".hero", fadeTime, { opacity: 0 });
 	tl.from(".end_txt", .3, { opacity: 0 });
 
 	tl.from(".cta", .3, { opacity: 0 }, "+=.3");
