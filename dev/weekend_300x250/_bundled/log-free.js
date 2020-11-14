@@ -35,7 +35,7 @@ function start() {
 	tl.from(".hero", fadeTime, { opacity: 0 });
 	tl.from(".end_txt", .3, { opacity: 0 });
 
-	tl.from(".cta", .3, { opacity: 0 }, "+=.3");
+	tl.from(".cta", .3, { opacity: 0 }, "+=.5");
 }
 
 function createSlide(ab) {

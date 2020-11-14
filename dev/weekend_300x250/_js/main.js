@@ -38,7 +38,7 @@ function start(){
 
 
 	
-	tl.from(".cta", .3, {opacity: 0}, "+=.3")
+	tl.from(".cta", .3, {opacity: 0}, "+=.5")
 	
 
 }
