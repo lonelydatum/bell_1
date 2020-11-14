@@ -77,7 +77,7 @@ function start() {
 
 	tl.add("t3-out", "+=" + read[2]);
 	tl.to(".t3", .3, { opacity: 0 }, "t3-out");
-	tl.to(".element_bottom", .8, { x: 0, y: 0, ease: Power1.easeOut }, "t3-out");
+	tl.to(".element_bottom", .6, { x: 0, y: 0, ease: Power1.easeOut }, "t3-out");
 
 	tl.from(".hero", _commonJsCommonJs.fadeTime, { opacity: 0 });
 	tl.from(".end_txt", _commonJsCommonJs.fadeTime, { opacity: 0 });
