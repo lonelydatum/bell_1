@@ -1,0 +1,96 @@
+
+
+@import '../../../_common/styles/common.scss';
+
+
+
+.frame1 {
+	opacity: 1;
+}
+
+
+.element_bottom{
+	// @include pos-scale(9, -20, .5);
+}
+
+.phoneholder.a{
+	@include pos(59, -3000);
+	.phoneholderChild{
+		@include pos(0, 0);
+	}
+}
+
+.phoneholder.b{
+	@include pos(110, -3000);	
+	.phoneholderChild{
+		@include pos(0, 30);
+
+		.phone_1{
+			@include pos-scale(0, -180, .5);
+		}
+
+		.phone_2{
+			@include pos-scale(0, 830, .5);
+		}
+		.phone_3{
+			@include pos-scale(0, 1830, .5);
+		}
+
+	}
+}
+
+.phoneholder.c{
+	@include pos(160, -3000);	
+	.phoneholderChild{
+		@include pos(0, -200);
+		
+	}
+}
+.phoneholder.d{
+	@include pos(213, -2290);	
+	.phoneholderChild{
+		@include pos(0, -100);
+
+		.phone_1{
+			@include pos-scale(0, -450, .5);
+		}
+
+		.phone_2{
+			@include pos-scale(0, 548, .5);
+		}
+		.phone_3{
+			@include pos-scale(0, 1544, .5);
+		}
+
+
+	}
+}
+
+
+.phoneholderChild{
+	.phone_1{
+		@include pos-scale(0, 0, .5);
+	}
+	.phone_2{
+		@include pos-scale(0, 1000, .5);
+	}
+	.phone_3{
+		@include pos-scale(0, 2000, .5);
+	}
+}
+
+.btn{
+	// border: solid 1px red;
+	// background-color: transparent;
+	width: 70px;
+	@include pos(553, 55);
+}
+
+
+
+#banner{	
+	width: 728px;
+	height: 90px;
+	// overflow: visible;
+}
+
