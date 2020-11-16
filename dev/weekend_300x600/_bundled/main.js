@@ -26,7 +26,7 @@ function createSlide(ab, data) {
 	var tl = new TimelineMax();
 
 	var speed_fast = .5;
-	var distance_short = 70;
+	var distance_short = 30;
 
 	var easeFast = Power1.easeOut;
 	var easeSlow = Linear.easeNone;
@@ -40,6 +40,25 @@ function createSlide(ab, data) {
 
 	return tl;
 }
+
+// function createSlide(ab, data){
+// 	const tl = new TimelineMax()
+
+// 	const speed_fast = .5
+// 	const distance_short = 70
+
+// 	const easeFast = Power1.easeOut
+// 	const easeSlow = Linear.easeNone
+
+// 	for(let i=0; i<3; i++){
+// 		tl.to(`.phoneholder.${ab}`, speed_fast, {y:data[i].y, ease:easeFast})		
+// 		tl.to(`.phoneholder.${ab}`, data[i].read, {y:`+=${distance_short}`, ease:easeSlow})
+// 	}
+
+// 	tl.to(`.phoneholder.${ab}`, speed_fast, {opacity:0, y:"+=300", ease:Power4.easeOut}, "+=0")
+
+// 	return tl
+// }
 
 function txt(read) {
 	TweenLite.defaultEase = Power1.easeOut;
