@@ -101,7 +101,7 @@ sup{
 .retina{
 	@include pos-scale(0, 0, .5);
 	transform-origin: 0 0 ;
-	image-rendering: -webkit-optimize-contrast;
+	// image-rendering: -webkit-optimize-contrast;
 	
 }
 
@@ -166,4 +166,8 @@ sup{
 #banner:hover .btn {
     background-color: #0066a4;
     border: 2px solid #0066a4;
+}
+
+.end_txt{
+	
 }
