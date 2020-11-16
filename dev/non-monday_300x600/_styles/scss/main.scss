@@ -1,0 +1,79 @@
+
+
+@import '../../../_common/styles/common.scss';
+
+
+
+.frame1 {
+	opacity: 1;
+}
+
+
+.element_bottom{
+	
+	@include pos-scale(10, -334, .5);
+}
+
+.phoneholder.a{
+	@include pos(5, -3500);
+	
+	
+	.phoneholderChild{
+		@include pos(0, 0);
+	}	
+}
+
+.phoneholder.b{	
+	@include pos(73, -3500);
+	.phoneholderChild{
+		@include pos(0, 0);
+
+		// .phone_1{
+		// 	@include pos-scale(0, 2082, .5);			
+		// }
+		// .phone_2{
+		// 	@include pos-scale(0, 1185, .5);
+		// }
+		// .phone_3{
+		// 	@include pos-scale(0, 0, .5);
+		// }
+
+
+	}
+}
+
+
+.phoneholderChild{
+	
+
+	.phone_1{
+		@include pos-scale(0, 2382, .5);
+		
+	}
+	.phone_2{
+		@include pos-scale(0, 1192, .5);
+		// opacity: 0;
+	}
+	.phone_3{
+		@include pos-scale(0, 0, .5);
+	}
+}
+
+.btn{
+	@include pos(47, 417);
+	width: 85px;
+	height: 27px;
+	// border: 1px solid red;
+	// background-color: transparent;
+}
+
+
+
+#banner{
+	font-size: 20px;
+	color: #333;
+	width: 300px;
+	height: 600px;
+	// overflow: visible;
+}
+

@@ -39,6 +39,26 @@ function createSlide(ab, data){
 	return tl
 }
 
+function txt(read){
+	TweenLite.defaultEase = Power1.easeOut
+	const tl = new TimelineMax()
+	tl.set(".frame1", {opacity:1})
+
+	
+	tl.to( ".t1", .3, {opacity: 0}, `+=${read[0]}`)
+	
+	tl.from([".t2"], fadeTime, {opacity: 0} )
+	
+
+	tl.to(".t2", .3, {opacity: 0}, `+=${read[1]}`)
+	tl.from(".t3", fadeTime, {opacity: 0})
+	
+	tl.add("t3-out", `+=${read[2]}`)
+	tl.to(".t3", .3, {opacity: 0}, "t3-out" )
+
+	return tl
+}
 
 
-export {size, createSlide, init, fadeTime}
+
+export {size, createSlide, init, fadeTime, txt}

@@ -1,0 +1,50 @@
+
+
+@import '../../../_common/styles/common.scss';
+
+
+
+.frame1 {
+	// opacity: 1;
+}
+
+
+.element_bottom{
+	
+	@include pos-scale(9, -20, .5);
+}
+
+.phoneholder.a{
+	@include pos(6, -2380);	
+	
+}
+
+.phoneholder.b{
+	@include pos(73, -2380);	
+}
+
+
+.phoneholderChild{
+	@include pos(0, 0);
+	.phone_1{
+		@include pos-scale(0, 1192, .5);	
+	}
+	.phone_2{
+		@include pos-scale(0, 0, .5);
+	}	
+}
+
+.btn{
+	@include pos(27, 205);
+}
+
+
+
+#banner{
+	font-size: 20px;
+	color: #333;
+	width: 300px;
+	height: 250px;
+	// overflow: visible;
+}
+
