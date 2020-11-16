@@ -53,7 +53,13 @@ var _commonJsCommonJs = require('../../_common/js/common.js');
 
 var read = [2.5, 4, 5];
 
-var data = [{ read: read[0], y: -2200 }, { read: read[1], y: -1800 }, { read: read[2], y: -1400 }];
+var a = [{ read: read[0], y: -3000 + 300 }, { read: read[1], y: -3000 + 600 }, { read: read[2], y: -3000 + 900 }];
+
+var b = [{ read: read[0], y: -3000 + 300 + 150 }, { read: read[1], y: -3000 + 600 + 150 }, { read: read[2], y: -3000 + 900 + 150 }];
+
+var c = [{ read: read[0], y: -3000 + 300 + 480 }, { read: read[1], y: -3000 + 600 + 480 }, { read: read[2], y: -3000 + 900 + 480 }];
+
+var d = [{ read: read[0], y: -3000 + 300 + 630 }, { read: read[1], y: -3000 + 600 + 630 }, { read: read[2], y: -3000 + 900 + 630 }];
 
 function start() {
 
@@ -80,11 +86,13 @@ function start() {
 	var tl = new TimelineMax();
 	tl.set(".frame1", { opacity: 1 });
 
+	// return
+
 	var tlSlider = new TimelineMax();
-	tlSlider.add((0, _commonJsCommonJs.createSlide)("a", data), 0);
-	tlSlider.add((0, _commonJsCommonJs.createSlide)("b", data), .30);
-	tlSlider.add((0, _commonJsCommonJs.createSlide)("c", data), .10);
-	tlSlider.add((0, _commonJsCommonJs.createSlide)("d", data), .20);
+	tlSlider.add((0, _commonJsCommonJs.createSlide)("a", a), 0);
+	tlSlider.add((0, _commonJsCommonJs.createSlide)("b", b), .30);
+	tlSlider.add((0, _commonJsCommonJs.createSlide)("c", c), .10);
+	tlSlider.add((0, _commonJsCommonJs.createSlide)("d", d), .20);
 
 	// const tl = init(data)
 

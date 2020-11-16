@@ -5,7 +5,7 @@
 
 
 .frame1 {
-	// opacity: 1;
+	opacity: 1;
 }
 
 
@@ -15,38 +15,23 @@
 }
 
 .phoneholder.a{
-	@include pos(6, -1190);
-	// @include pos(10, -890);
-	// @include pos(10, -820);
-	// @include pos(10, -490);
-	// @include pos(10, -100);
-	.phoneholderChild{
-		@include pos(0, 0);
-	}
+	@include pos(6, -2380);	
 	
 }
 
 .phoneholder.b{
-	@include pos(73, -1190);
-	.phoneholderChild{
-		@include pos(0, -30);
-	}
+	@include pos(73, -2380);	
 }
 
 
 .phoneholderChild{
-	
-
+	@include pos(0, 0);
 	.phone_1{
-		@include pos(0, 800);
-		
+		@include pos-scale(0, 1192, .5);	
 	}
 	.phone_2{
-		@include pos(0, 400);
-	}
-	.phone_3{
-		@include pos(0, 0);
-	}
+		@include pos-scale(0, 0, .5);
+	}	
 }
 
 .btn{

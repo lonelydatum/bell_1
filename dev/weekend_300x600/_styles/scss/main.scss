@@ -15,23 +15,30 @@
 }
 
 .phoneholder.a{
-	@include pos(5, -2400);
-	// @include pos(5, -1600);
-	// @include pos(10, -890);
-	// @include pos(10, -820);
-	// @include pos(10, -490);
+	@include pos(5, -3500);
+	
 	
 	.phoneholderChild{
 		@include pos(0, 0);
-	}
-	
+	}	
 }
 
-.phoneholder.b{
-	
-	@include pos(73, -2400);
+.phoneholder.b{	
+	@include pos(73, -3500);
 	.phoneholderChild{
-		@include pos(0, 30);
+		@include pos(0, 0);
+
+		// .phone_1{
+		// 	@include pos-scale(0, 2082, .5);			
+		// }
+		// .phone_2{
+		// 	@include pos-scale(0, 1185, .5);
+		// }
+		// .phone_3{
+		// 	@include pos-scale(0, 0, .5);
+		// }
+
+
 	}
 }
 
@@ -40,15 +47,15 @@
 	
 
 	.phone_1{
-		@include pos(0, 1600);
+		@include pos-scale(0, 2382, .5);
 		
 	}
 	.phone_2{
-		@include pos(0, 800);
+		@include pos-scale(0, 1192, .5);
 		// opacity: 0;
 	}
 	.phone_3{
-		@include pos(0, 0);
+		@include pos-scale(0, 0, .5);
 	}
 }
 

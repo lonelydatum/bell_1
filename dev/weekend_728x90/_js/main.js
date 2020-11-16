@@ -4,11 +4,30 @@ import {createSlide, init, fadeTime} from '../../_common/js/common.js'
 
 const read = [2.5, 4, 5]
 
-const data = [
-	{ read: read[0],  y: -2200 },
-	{ read: read[1],  y: -1800 },
-	{ read: read[2],  y: -1400 }
+const a = [
+	{ read: read[0],  y: -3000+300 },
+	{ read: read[1],  y: -3000+600 },
+	{ read: read[2],  y: -3000+900 }
 ]
+
+const b = [
+	{ read: read[0],  y: -3000+300+150 },
+	{ read: read[1],  y: -3000+600+150 },
+	{ read: read[2],  y: -3000+900+150 }
+]
+
+const c = [
+	{ read: read[0],  y: -3000+300+480 },
+	{ read: read[1],  y: -3000+600+480 },
+	{ read: read[2],  y: -3000+900+480 }
+]
+
+const d = [
+	{ read: read[0],  y: -3000+300+630 },
+	{ read: read[1],  y: -3000+600+630 },
+	{ read: read[2],  y: -3000+900+630 }
+]
+
 
 function start(){
 	
@@ -37,12 +56,14 @@ function start(){
 	const tl = new TimelineMax()
 	tl.set(".frame1", {opacity:1})
 
+	// return
+
 
 	const tlSlider = new TimelineMax()
-	tlSlider.add( createSlide("a", data), 0)
-	tlSlider.add( createSlide("b", data), .30)
-	tlSlider.add( createSlide("c", data), .10)
-	tlSlider.add( createSlide("d", data), .20)
+	tlSlider.add( createSlide("a", a), 0)
+	tlSlider.add( createSlide("b", b), .30)
+	tlSlider.add( createSlide("c", c), .10)
+	tlSlider.add( createSlide("d", d), .20)
 
 
 	// const tl = init(data)

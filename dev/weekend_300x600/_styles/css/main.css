@@ -247,9 +247,9 @@ sup {
 }
 
 .phoneholder.a {
-  -webkit-transform: translate(5px, -2400px);
-  -ms-transform: translate(5px, -2400px);
-  transform: translate(5px, -2400px);
+  -webkit-transform: translate(5px, -3500px);
+  -ms-transform: translate(5px, -3500px);
+  transform: translate(5px, -3500px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -269,9 +269,9 @@ sup {
 }
 
 .phoneholder.b {
-  -webkit-transform: translate(73px, -2400px);
-  -ms-transform: translate(73px, -2400px);
-  transform: translate(73px, -2400px);
+  -webkit-transform: translate(73px, -3500px);
+  -ms-transform: translate(73px, -3500px);
+  transform: translate(73px, -3500px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -280,9 +280,9 @@ sup {
 }
 
 .phoneholder.b .phoneholderChild {
-  -webkit-transform: translate(0px, 30px);
-  -ms-transform: translate(0px, 30px);
-  transform: translate(0px, 30px);
+  -webkit-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -291,9 +291,9 @@ sup {
 }
 
 .phoneholderChild .phone_1 {
-  -webkit-transform: translate(0px, 1600px);
-  -ms-transform: translate(0px, 1600px);
-  transform: translate(0px, 1600px);
+  -webkit-transform: translate(0px, 2382px) scale(0.5, 0.5);
+  -ms-transform: translate(0px, 2382px) scale(0.5, 0.5);
+  transform: translate(0px, 2382px) scale(0.5, 0.5);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -302,9 +302,9 @@ sup {
 }
 
 .phoneholderChild .phone_2 {
-  -webkit-transform: translate(0px, 800px);
-  -ms-transform: translate(0px, 800px);
-  transform: translate(0px, 800px);
+  -webkit-transform: translate(0px, 1192px) scale(0.5, 0.5);
+  -ms-transform: translate(0px, 1192px) scale(0.5, 0.5);
+  transform: translate(0px, 1192px) scale(0.5, 0.5);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -313,9 +313,9 @@ sup {
 }
 
 .phoneholderChild .phone_3 {
-  -webkit-transform: translate(0px, 0px);
-  -ms-transform: translate(0px, 0px);
-  transform: translate(0px, 0px);
+  -webkit-transform: translate(0px, 0px) scale(0.5, 0.5);
+  -ms-transform: translate(0px, 0px) scale(0.5, 0.5);
+  transform: translate(0px, 0px) scale(0.5, 0.5);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
