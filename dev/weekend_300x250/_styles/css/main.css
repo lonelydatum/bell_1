@@ -231,10 +231,6 @@ sup {
   border: 2px solid #0066a4;
 }
 
-.frame1 {
-  opacity: 1;
-}
-
 .element_bottom {
   -webkit-transform: translate(9px, -20px) scale(0.5, 0.5);
   -ms-transform: translate(9px, -20px) scale(0.5, 0.5);
