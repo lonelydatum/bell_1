@@ -13,12 +13,12 @@ function start(){
 	
 
 
-	tl.from(".hero", fadeTime, {opacity:0}, .2)
-	tl.from(".t0", fadeTime, {opacity:0}, "+=.3")
-	tl.to(".t0", fadeTime, {opacity:0}, "+=3.5")
+	// tl.from(".hero", fadeTime, {opacity:0}, .2)
+	tl.from(".t0", .4, {opacity:0}, "+=.3")
+	tl.to(".t0", .3, {opacity:0}, "+=3.5")
 	// tl.from(".t1", fadeTime, {opacity:0}, "+=.3")
 
-	tl.from([".legal", ".t1"], fadeTime, {opacity:0})
+	tl.from([".legal", ".t1"], fadeTime, {opacity:0}, "+=.3")
 	tl.from(".cta", fadeTime, {opacity:0}, "+=.3")
 	
 }

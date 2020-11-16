@@ -75,12 +75,12 @@ function start() {
 	var tl = new TimelineMax();
 	tl.set(".frame1", { opacity: 1 });
 
-	tl.from(".hero", _commonJsCommonJs.fadeTime, { opacity: 0 }, .2);
-	tl.from(".t0", _commonJsCommonJs.fadeTime, { opacity: 0 }, "+=.3");
-	tl.to(".t0", _commonJsCommonJs.fadeTime, { opacity: 0 }, "+=3.5");
+	// tl.from(".hero", fadeTime, {opacity:0}, .2)
+	tl.from(".t0", .4, { opacity: 0 }, "+=.3");
+	tl.to(".t0", .3, { opacity: 0 }, "+=3.5");
 	// tl.from(".t1", fadeTime, {opacity:0}, "+=.3")
 
-	tl.from([".legal", ".t1"], _commonJsCommonJs.fadeTime, { opacity: 0 });
+	tl.from([".legal", ".t1"], _commonJsCommonJs.fadeTime, { opacity: 0 }, "+=.3");
 	tl.from(".cta", _commonJsCommonJs.fadeTime, { opacity: 0 }, "+=.3");
 }
 
