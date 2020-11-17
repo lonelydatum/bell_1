@@ -6,11 +6,11 @@ var notify          = require("gulp-notify");
 
 function buildTemplates(project, browserSync){
 	var splitInfo = project.split('_');
-    var name = splitInfo[0].split("/")[2];
-    var size = splitInfo[1].split("x");
+    // var name = splitInfo[0].split("/")[2];
+    var size = splitInfo[0].split("x");
     var width = size[0];
     var height = size[1];
-    var obj = {name: name, width:width, height:height};
+    var obj = {name: "name", width:width, height:height};
 
     return gulp.src("./dev/"+project+"/index.ejs")
 
