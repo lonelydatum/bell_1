@@ -114,6 +114,7 @@ function start() {
 	tl.from(".hero", _commonJsCommonJs.fadeTime, { opacity: 0 });
 	tl.from(".end_txt", _commonJsCommonJs.fadeTime, { opacity: 0 });
 
+	tl.set(".cta", { display: 'block' });
 	tl.from(".cta", _commonJsCommonJs.fadeTime, { opacity: 0 }, "+=.5");
 }
 

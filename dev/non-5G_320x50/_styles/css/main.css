@@ -225,6 +225,10 @@ sup {
   height: 19.5px;
 }
 
+.cta {
+  display: none;
+}
+
 #banner:hover .btn {
   background-color: #0066a4;
   border: 2px solid #0066a4;

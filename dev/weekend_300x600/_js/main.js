@@ -39,7 +39,7 @@ function start(){
 	tl.from(".end_txt", fadeTime, {opacity: 0})
 
 
-	
+	tl.set(".cta",  {display:'block'})
 	tl.from(".cta", fadeTime, {opacity: 0}, "+=.1")
 	
 
