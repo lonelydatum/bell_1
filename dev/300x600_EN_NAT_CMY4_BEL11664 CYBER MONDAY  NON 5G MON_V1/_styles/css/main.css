@@ -234,6 +234,10 @@ sup {
   border: 2px solid #0066a4;
 }
 
+a, #bannerMain {
+  display: inline-block;
+}
+
 .element_bottom {
   -webkit-transform: translate(10px, -334px) scale(0.5, 0.5);
   -ms-transform: translate(10px, -334px) scale(0.5, 0.5);

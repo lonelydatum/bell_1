@@ -234,6 +234,14 @@ sup {
   border: 2px solid #0066a4;
 }
 
+a, #bannerMain {
+  display: inline-block;
+}
+
+.cta {
+  display: block;
+}
+
 #banner {
   font-size: 20px;
   color: #333;
