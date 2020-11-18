@@ -3,7 +3,7 @@
 
 var _commonJsCommonJs = require('../../_common/js/common.js');
 
-var read = [2.5, 4, 5];
+var read = [2.5, _commonJsCommonJs.f2, 5];
 
 var a = [{ read: read[0], y: -3000 + 300 }, { read: read[1], y: -3000 + 600 }, { read: read[2], y: -3000 + 900 }];
 
@@ -64,6 +64,7 @@ var banner = document.getElementById('banner');
 var size = { w: banner.offsetWidth, h: banner.offsetHeight };
 
 var fadeTime = .5;
+var f2 = 3.5;
 
 function init(data) {
 	TweenLite.defaultEase = Power1.easeOut;
@@ -139,6 +140,7 @@ exports.createSlide = createSlide;
 exports.init = init;
 exports.fadeTime = fadeTime;
 exports.txt = txt;
+exports.f2 = f2;
 
 },{}]},{},[1])
 

@@ -31,6 +31,7 @@ var banner = document.getElementById('banner');
 var size = { w: banner.offsetWidth, h: banner.offsetHeight };
 
 var fadeTime = .5;
+var f2 = 3.5;
 
 function init(data) {
 	TweenLite.defaultEase = Power1.easeOut;
@@ -106,6 +107,7 @@ exports.createSlide = createSlide;
 exports.init = init;
 exports.fadeTime = fadeTime;
 exports.txt = txt;
+exports.f2 = f2;
 
 },{}]},{},[1])
 

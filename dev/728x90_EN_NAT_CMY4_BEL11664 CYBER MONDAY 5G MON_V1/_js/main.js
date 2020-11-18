@@ -1,8 +1,8 @@
-import {createSlide, init, fadeTime, txt} from '../../_common/js/common.js'
+import {f2, createSlide, init, fadeTime, txt} from '../../_common/js/common.js'
 
 
 
-const read = [2.5, 4, 5]
+const read = [2.5, f2, 5]
 
 const a = [
 	{ read: read[0],  y: -3000+300 },

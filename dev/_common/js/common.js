@@ -2,6 +2,7 @@ const banner = document.getElementById('banner')
 const size = {w:banner.offsetWidth, h:banner.offsetHeight}
 
 const fadeTime = .5
+const f2 = 3.5
 
 
 function init(data){
@@ -83,4 +84,4 @@ function txt(read){
 
 
 
-export {size, createSlide, init, fadeTime, txt}
+export {size, createSlide, init, fadeTime, txt, f2}
